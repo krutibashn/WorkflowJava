@@ -3,7 +3,7 @@ name: Welcome Collaborator
 on:
   push:
     branches:
-      - feature-branch  # change this to your actual branch name
+      - branch2
 
 jobs:
   greet:
@@ -11,4 +11,3 @@ jobs:
     steps:
       - name: Say Hello to Collaborator
         run: echo "Hello, ${{ github.actor }} 👋"
-
