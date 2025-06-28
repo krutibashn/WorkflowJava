@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Say Hello to Collaborator
-        run: echo "Hello, ${{ github.actor }}
+        run: echo "Hello, ${{ github.actor }}"
