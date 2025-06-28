@@ -26,4 +26,6 @@ jobs:
           javac HelloWorld.java
 
     - name: Run Java program
-      run: java AddNumbers
+      run: |
+          java AddNumbers
+          java HelloWorld
