@@ -1,0 +1,14 @@
+name: Welcome Collaborator
+
+on:
+  push:
+    branches:
+      - feature-branch  # change this to your actual branch name
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello to Collaborator
+        run: echo "Hello, ${{ github.actor }} 👋"
+
