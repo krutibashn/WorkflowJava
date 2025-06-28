@@ -1,0 +1,13 @@
+name: Greet New Collaborator
+
+on:
+  member:
+    types: [added]
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get collaborator and repo info
+        run: |
+          echo "Welcome ${GITHUB_ACTOR} to the ${GITHUB_REPOSITORY} repository!"
