@@ -11,3 +11,5 @@ jobs:
     steps:
       - name: Say Hello to Collaborator
         run: echo "Hello, ${{ github.actor }} 👋"
+      -name: hi
+       run: echo "hi to everyone"
