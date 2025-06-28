@@ -21,7 +21,9 @@ jobs:
         java-version: '17'
 
     - name: Compile Java program
-      run: javac AddNumbers.java
+      run: |
+          javac AddNumbers.java
+          javac HelloWorld.java
 
     - name: Run Java program
       run: java AddNumbers
